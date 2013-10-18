@@ -21,6 +21,29 @@
 		CE151C231810990F0084653D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C051810990F0084653D /* UIKit.framework */; };
 		CE151C2B1810990F0084653D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE151C291810990F0084653D /* InfoPlist.strings */; };
 		CE151C2D1810990F0084653D /* RoomFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C2C1810990F0084653D /* RoomFinderTests.m */; };
+		CE151C3D1810AAF00084653D /* menuImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE151C3C1810AAEF0084653D /* menuImage.jpg */; };
+		CE151C3F1810AB4E0084653D /* university-of-calgary.png in Resources */ = {isa = PBXBuildFile; fileRef = CE151C3E1810AB4E0084653D /* university-of-calgary.png */; };
+		CE151C4F1810B6EF0084653D /* ICM_DirectionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C4E1810B6EF0084653D /* ICM_DirectionsViewController.m */; };
+		CE151C521810BB8C0084653D /* ICM_Segue_RightToLeft.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C511810BB8C0084653D /* ICM_Segue_RightToLeft.m */; };
+		CE151C541810BBB30084653D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C531810BBB30084653D /* QuartzCore.framework */; };
+		CE151C571810BE720084653D /* ICM_MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C561810BE720084653D /* ICM_MapViewController.m */; };
+		CE151C5A1810BF9B0084653D /* ICM_SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C591810BF9B0084653D /* ICM_SettingsViewController.m */; };
+		CE151C6A1810C9790084653D /* university.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE151C691810C9790084653D /* university.jpeg */; };
+		CE151C701810D70C0084653D /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C6F1810D70C0084653D /* GoogleMaps.framework */; };
+		CE151C721810D7730084653D /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE151C711810D7730084653D /* GoogleMaps.bundle */; };
+		CE151C741810D7960084653D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C731810D7960084653D /* AVFoundation.framework */; };
+		CE151C761810D7A00084653D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C751810D7A00084653D /* CoreData.framework */; };
+		CE151C781810D7A90084653D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C771810D7A90084653D /* CoreLocation.framework */; };
+		CE151C7A1810D7B10084653D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C791810D7B10084653D /* CoreText.framework */; };
+		CE151C7C1810D7B90084653D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C7B1810D7B90084653D /* GLKit.framework */; };
+		CE151C7E1810D7C40084653D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C7D1810D7C40084653D /* ImageIO.framework */; };
+		CE151C801810D7D20084653D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C7F1810D7D20084653D /* libc++.dylib */; };
+		CE151C821810D7DE0084653D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C811810D7DE0084653D /* libicucore.dylib */; };
+		CE151C841810D7E90084653D /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C831810D7E90084653D /* libz.dylib */; };
+		CE151C861810D7F50084653D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C851810D7F50084653D /* OpenGLES.framework */; };
+		CE151C881810D8050084653D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C871810D8050084653D /* SystemConfiguration.framework */; };
+		CE151C8E1810E9380084653D /* ICM_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C8D1810E9380084653D /* ICM_Model.m */; };
+		CE151C911810F7380084653D /* ICM_StartingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C901810F7380084653D /* ICM_StartingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +76,35 @@
 		CE151C281810990F0084653D /* RoomFinderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoomFinderTests-Info.plist"; sourceTree = "<group>"; };
 		CE151C2A1810990F0084653D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE151C2C1810990F0084653D /* RoomFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoomFinderTests.m; sourceTree = "<group>"; };
+		CE151C3C1810AAEF0084653D /* menuImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = menuImage.jpg; path = ../menuImage.jpg; sourceTree = "<group>"; };
+		CE151C3E1810AB4E0084653D /* university-of-calgary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "university-of-calgary.png"; path = "../university-of-calgary.png"; sourceTree = "<group>"; };
+		CE151C4D1810B6EF0084653D /* ICM_DirectionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_DirectionsViewController.h; sourceTree = "<group>"; };
+		CE151C4E1810B6EF0084653D /* ICM_DirectionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_DirectionsViewController.m; sourceTree = "<group>"; };
+		CE151C501810BB8C0084653D /* ICM_Segue_RightToLeft.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_Segue_RightToLeft.h; sourceTree = "<group>"; };
+		CE151C511810BB8C0084653D /* ICM_Segue_RightToLeft.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_Segue_RightToLeft.m; sourceTree = "<group>"; };
+		CE151C531810BBB30084653D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CE151C551810BE720084653D /* ICM_MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_MapViewController.h; sourceTree = "<group>"; };
+		CE151C561810BE720084653D /* ICM_MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_MapViewController.m; sourceTree = "<group>"; };
+		CE151C581810BF9B0084653D /* ICM_SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_SettingsViewController.h; sourceTree = "<group>"; };
+		CE151C591810BF9B0084653D /* ICM_SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_SettingsViewController.m; sourceTree = "<group>"; };
+		CE151C691810C9790084653D /* university.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = university.jpeg; path = ../../../university.jpeg; sourceTree = "<group>"; };
+		CE151C6F1810D70C0084653D /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		CE151C711810D7730084653D /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		CE151C731810D7960084653D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CE151C751810D7A00084653D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE151C771810D7A90084653D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CE151C791810D7B10084653D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		CE151C7B1810D7B90084653D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		CE151C7D1810D7C40084653D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		CE151C7F1810D7D20084653D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		CE151C811810D7DE0084653D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		CE151C831810D7E90084653D /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		CE151C851810D7F50084653D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CE151C871810D8050084653D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CE151C8C1810E9380084653D /* ICM_Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_Model.h; sourceTree = "<group>"; };
+		CE151C8D1810E9380084653D /* ICM_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_Model.m; sourceTree = "<group>"; };
+		CE151C8F1810F7380084653D /* ICM_StartingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_StartingViewController.h; sourceTree = "<group>"; };
+		CE151C901810F7380084653D /* ICM_StartingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_StartingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +112,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE151C881810D8050084653D /* SystemConfiguration.framework in Frameworks */,
+				CE151C861810D7F50084653D /* OpenGLES.framework in Frameworks */,
+				CE151C841810D7E90084653D /* libz.dylib in Frameworks */,
+				CE151C821810D7DE0084653D /* libicucore.dylib in Frameworks */,
+				CE151C801810D7D20084653D /* libc++.dylib in Frameworks */,
+				CE151C7E1810D7C40084653D /* ImageIO.framework in Frameworks */,
+				CE151C7C1810D7B90084653D /* GLKit.framework in Frameworks */,
+				CE151C7A1810D7B10084653D /* CoreText.framework in Frameworks */,
+				CE151C781810D7A90084653D /* CoreLocation.framework in Frameworks */,
+				CE151C761810D7A00084653D /* CoreData.framework in Frameworks */,
+				CE151C741810D7960084653D /* AVFoundation.framework in Frameworks */,
+				CE151C541810BBB30084653D /* QuartzCore.framework in Frameworks */,
 				CE151C041810990F0084653D /* CoreGraphics.framework in Frameworks */,
 				CE151C061810990F0084653D /* UIKit.framework in Frameworks */,
+				CE151C701810D70C0084653D /* GoogleMaps.framework in Frameworks */,
 				CE151C021810990F0084653D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +166,20 @@
 		CE151C001810990F0084653D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE151C871810D8050084653D /* SystemConfiguration.framework */,
+				CE151C851810D7F50084653D /* OpenGLES.framework */,
+				CE151C831810D7E90084653D /* libz.dylib */,
+				CE151C811810D7DE0084653D /* libicucore.dylib */,
+				CE151C7F1810D7D20084653D /* libc++.dylib */,
+				CE151C7D1810D7C40084653D /* ImageIO.framework */,
+				CE151C7B1810D7B90084653D /* GLKit.framework */,
+				CE151C791810D7B10084653D /* CoreText.framework */,
+				CE151C771810D7A90084653D /* CoreLocation.framework */,
+				CE151C751810D7A00084653D /* CoreData.framework */,
+				CE151C731810D7960084653D /* AVFoundation.framework */,
+				CE151C711810D7730084653D /* GoogleMaps.bundle */,
+				CE151C6F1810D70C0084653D /* GoogleMaps.framework */,
+				CE151C531810BBB30084653D /* QuartzCore.framework */,
 				CE151C011810990F0084653D /* Foundation.framework */,
 				CE151C031810990F0084653D /* CoreGraphics.framework */,
 				CE151C051810990F0084653D /* UIKit.framework */,
@@ -115,8 +194,20 @@
 				CE151C101810990F0084653D /* ICM_AppDelegate.h */,
 				CE151C111810990F0084653D /* ICM_AppDelegate.m */,
 				CE151C131810990F0084653D /* Main.storyboard */,
+				CE151C8C1810E9380084653D /* ICM_Model.h */,
+				CE151C8D1810E9380084653D /* ICM_Model.m */,
 				CE151C161810990F0084653D /* ICM_ViewController.h */,
 				CE151C171810990F0084653D /* ICM_ViewController.m */,
+				CE151C4D1810B6EF0084653D /* ICM_DirectionsViewController.h */,
+				CE151C4E1810B6EF0084653D /* ICM_DirectionsViewController.m */,
+				CE151C501810BB8C0084653D /* ICM_Segue_RightToLeft.h */,
+				CE151C511810BB8C0084653D /* ICM_Segue_RightToLeft.m */,
+				CE151C551810BE720084653D /* ICM_MapViewController.h */,
+				CE151C561810BE720084653D /* ICM_MapViewController.m */,
+				CE151C581810BF9B0084653D /* ICM_SettingsViewController.h */,
+				CE151C591810BF9B0084653D /* ICM_SettingsViewController.m */,
+				CE151C8F1810F7380084653D /* ICM_StartingViewController.h */,
+				CE151C901810F7380084653D /* ICM_StartingViewController.m */,
 				CE151C191810990F0084653D /* Images.xcassets */,
 				CE151C081810990F0084653D /* Supporting Files */,
 			);
@@ -126,6 +217,9 @@
 		CE151C081810990F0084653D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE151C3E1810AB4E0084653D /* university-of-calgary.png */,
+				CE151C691810C9790084653D /* university.jpeg */,
+				CE151C3C1810AAEF0084653D /* menuImage.jpg */,
 				CE151C091810990F0084653D /* RoomFinder-Info.plist */,
 				CE151C0A1810990F0084653D /* InfoPlist.strings */,
 				CE151C0D1810990F0084653D /* main.m */,
@@ -229,9 +323,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE151C3F1810AB4E0084653D /* university-of-calgary.png in Resources */,
+				CE151C6A1810C9790084653D /* university.jpeg in Resources */,
+				CE151C3D1810AAF00084653D /* menuImage.jpg in Resources */,
 				CE151C1A1810990F0084653D /* Images.xcassets in Resources */,
 				CE151C0C1810990F0084653D /* InfoPlist.strings in Resources */,
 				CE151C151810990F0084653D /* Main.storyboard in Resources */,
+				CE151C721810D7730084653D /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +348,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE151C4F1810B6EF0084653D /* ICM_DirectionsViewController.m in Sources */,
+				CE151C5A1810BF9B0084653D /* ICM_SettingsViewController.m in Sources */,
+				CE151C571810BE720084653D /* ICM_MapViewController.m in Sources */,
 				CE151C181810990F0084653D /* ICM_ViewController.m in Sources */,
+				CE151C521810BB8C0084653D /* ICM_Segue_RightToLeft.m in Sources */,
+				CE151C911810F7380084653D /* ICM_StartingViewController.m in Sources */,
+				CE151C8E1810E9380084653D /* ICM_Model.m in Sources */,
 				CE151C121810990F0084653D /* ICM_AppDelegate.m in Sources */,
 				CE151C0E1810990F0084653D /* main.m in Sources */,
 			);
@@ -337,6 +441,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -369,6 +474,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -379,6 +485,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Nantook/Desktop/CPSC/599/RoomFinder,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoomFinder/RoomFinder-Prefix.pch";
 				INFOPLIST_FILE = "RoomFinder/RoomFinder-Info.plist";
@@ -392,6 +503,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Nantook/Desktop/CPSC/599/RoomFinder,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RoomFinder/RoomFinder-Prefix.pch";
 				INFOPLIST_FILE = "RoomFinder/RoomFinder-Info.plist";
