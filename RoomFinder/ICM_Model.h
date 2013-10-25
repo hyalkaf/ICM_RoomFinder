@@ -11,6 +11,9 @@
 @interface ICM_Model : NSObject
 
 @property (strong, nonatomic) NSMutableArray *buildingList;
-@property (strong, nonatomic) NSArray *nodeList;
+@property (strong, nonatomic) NSMutableArray *nodeList;
+@property (strong, nonatomic) NSMutableArray *adjacancyMatrix;
+
++ (id)sharedModel;
 
 @end

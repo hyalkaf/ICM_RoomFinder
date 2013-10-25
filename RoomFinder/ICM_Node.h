@@ -7,16 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <GoogleMaps/GoogleMaps.h>
+
 
 @interface ICM_Node : NSObject
 
 @property (nonatomic, getter = isInside) BOOL inside;
 @property (nonatomic, getter = isGroundLevel) BOOL groundLevel;
 @property (nonatomic, getter = isRoom) BOOL roomNode;
-@property (nonatomic) CLLocationCoordinate2D location;
+//@property (nonatomic) CLLocationCoordinate2D location;
 @property (strong, nonatomic) UIImage *photo;
+@property (strong, nonatomic) NSMutableArray *neighboursAndWeights;
+@property (nonatomic) NSString* name;
 
-- (id)initWithValues:(BOOL)inside Ground:(BOOL)ground Lattitude:(float)lattitude Longitude:(float)longitude Photo:(UIImage*)photo;
+- (id)initWithValues:(BOOL)inside Ground:(BOOL)ground Lattitude:(float)lattitude Longitude:(float)longitude Photo:(UIImage*)photo Name:(NSString*)name;
+
+- (void)addNeighbour:(ICM_Node*)node Distance:(NSNumber*)distance;
 
 @end
+

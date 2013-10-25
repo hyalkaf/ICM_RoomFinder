@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    _model = [[ICM_Model alloc] init];
+
 
     [self.tableView reloadData];
     // Uncomment the following line to preserve selection between presentations.
@@ -46,7 +46,8 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_model.buildingList count];
+    ICM_Model *sharedModel = [ICM_Model sharedModel];
+    return [[sharedModel buildingList] count];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -55,7 +56,9 @@
     if ( cell == nil ) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     }
-    cell.textLabel.text = [_model.buildingList objectAtIndex:indexPath.row];
+    ICM_Model *sharedModel = [ICM_Model sharedModel];
+    cell.textLabel.text = [[sharedModel buildingList] objectAtIndex:indexPath.row];
+
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     return cell;
 }
