@@ -19,8 +19,8 @@
         [_buildingList addObject:@"MS - Mathematical Science"];
         [_buildingList addObject:@"ST - Science Theatres"];
         [_buildingList addObject:@"CH - Craigie Hall"];
+        
 
-        _FUCK = 999;
     }
     return self;
 }

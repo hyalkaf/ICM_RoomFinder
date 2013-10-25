@@ -44,6 +44,8 @@
 		CE151C881810D8050084653D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C871810D8050084653D /* SystemConfiguration.framework */; };
 		CE151C8E1810E9380084653D /* ICM_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C8D1810E9380084653D /* ICM_Model.m */; };
 		CE151C911810F7380084653D /* ICM_StartingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C901810F7380084653D /* ICM_StartingViewController.m */; };
+		CEA257DA1811E1240017371B /* ICM_Node.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA257D91811E1240017371B /* ICM_Node.m */; };
+		CEA257DE1811EA650017371B /* panorama1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEA257DD1811EA650017371B /* panorama1.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,9 @@
 		CE151C8D1810E9380084653D /* ICM_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_Model.m; sourceTree = "<group>"; };
 		CE151C8F1810F7380084653D /* ICM_StartingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_StartingViewController.h; sourceTree = "<group>"; };
 		CE151C901810F7380084653D /* ICM_StartingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_StartingViewController.m; sourceTree = "<group>"; };
+		CEA257D81811E1240017371B /* ICM_Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_Node.h; sourceTree = "<group>"; };
+		CEA257D91811E1240017371B /* ICM_Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_Node.m; sourceTree = "<group>"; };
+		CEA257DD1811EA650017371B /* panorama1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = panorama1.jpg; path = ../panorama1.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,23 +196,11 @@
 		CE151C071810990F0084653D /* RoomFinder */ = {
 			isa = PBXGroup;
 			children = (
-				CE151C101810990F0084653D /* ICM_AppDelegate.h */,
-				CE151C111810990F0084653D /* ICM_AppDelegate.m */,
+				CEA257D61811E1040017371B /* Delegates */,
 				CE151C131810990F0084653D /* Main.storyboard */,
-				CE151C8C1810E9380084653D /* ICM_Model.h */,
-				CE151C8D1810E9380084653D /* ICM_Model.m */,
-				CE151C161810990F0084653D /* ICM_ViewController.h */,
-				CE151C171810990F0084653D /* ICM_ViewController.m */,
-				CE151C4D1810B6EF0084653D /* ICM_DirectionsViewController.h */,
-				CE151C4E1810B6EF0084653D /* ICM_DirectionsViewController.m */,
-				CE151C501810BB8C0084653D /* ICM_Segue_RightToLeft.h */,
-				CE151C511810BB8C0084653D /* ICM_Segue_RightToLeft.m */,
-				CE151C551810BE720084653D /* ICM_MapViewController.h */,
-				CE151C561810BE720084653D /* ICM_MapViewController.m */,
-				CE151C581810BF9B0084653D /* ICM_SettingsViewController.h */,
-				CE151C591810BF9B0084653D /* ICM_SettingsViewController.m */,
-				CE151C8F1810F7380084653D /* ICM_StartingViewController.h */,
-				CE151C901810F7380084653D /* ICM_StartingViewController.m */,
+				CEA257D71811E10A0017371B /* Model */,
+				CEA257D41811E0E30017371B /* View Controllers */,
+				CEA257D51811E0F40017371B /* Segues */,
 				CE151C191810990F0084653D /* Images.xcassets */,
 				CE151C081810990F0084653D /* Supporting Files */,
 			);
@@ -217,6 +210,7 @@
 		CE151C081810990F0084653D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEA257DD1811EA650017371B /* panorama1.jpg */,
 				CE151C3E1810AB4E0084653D /* university-of-calgary.png */,
 				CE151C691810C9790084653D /* university.jpeg */,
 				CE151C3C1810AAEF0084653D /* menuImage.jpg */,
@@ -244,6 +238,52 @@
 				CE151C291810990F0084653D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEA257D41811E0E30017371B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE151C161810990F0084653D /* ICM_ViewController.h */,
+				CE151C171810990F0084653D /* ICM_ViewController.m */,
+				CE151C4D1810B6EF0084653D /* ICM_DirectionsViewController.h */,
+				CE151C4E1810B6EF0084653D /* ICM_DirectionsViewController.m */,
+				CE151C551810BE720084653D /* ICM_MapViewController.h */,
+				CE151C561810BE720084653D /* ICM_MapViewController.m */,
+				CE151C581810BF9B0084653D /* ICM_SettingsViewController.h */,
+				CE151C591810BF9B0084653D /* ICM_SettingsViewController.m */,
+				CE151C8F1810F7380084653D /* ICM_StartingViewController.h */,
+				CE151C901810F7380084653D /* ICM_StartingViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CEA257D51811E0F40017371B /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				CE151C501810BB8C0084653D /* ICM_Segue_RightToLeft.h */,
+				CE151C511810BB8C0084653D /* ICM_Segue_RightToLeft.m */,
+			);
+			name = Segues;
+			sourceTree = "<group>";
+		};
+		CEA257D61811E1040017371B /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				CE151C101810990F0084653D /* ICM_AppDelegate.h */,
+				CE151C111810990F0084653D /* ICM_AppDelegate.m */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		CEA257D71811E10A0017371B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE151C8C1810E9380084653D /* ICM_Model.h */,
+				CE151C8D1810E9380084653D /* ICM_Model.m */,
+				CEA257D81811E1240017371B /* ICM_Node.h */,
+				CEA257D91811E1240017371B /* ICM_Node.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,6 +367,7 @@
 				CE151C6A1810C9790084653D /* university.jpeg in Resources */,
 				CE151C3D1810AAF00084653D /* menuImage.jpg in Resources */,
 				CE151C1A1810990F0084653D /* Images.xcassets in Resources */,
+				CEA257DE1811EA650017371B /* panorama1.jpg in Resources */,
 				CE151C0C1810990F0084653D /* InfoPlist.strings in Resources */,
 				CE151C151810990F0084653D /* Main.storyboard in Resources */,
 				CE151C721810D7730084653D /* GoogleMaps.bundle in Resources */,
@@ -351,6 +392,7 @@
 				CE151C4F1810B6EF0084653D /* ICM_DirectionsViewController.m in Sources */,
 				CE151C5A1810BF9B0084653D /* ICM_SettingsViewController.m in Sources */,
 				CE151C571810BE720084653D /* ICM_MapViewController.m in Sources */,
+				CEA257DA1811E1240017371B /* ICM_Node.m in Sources */,
 				CE151C181810990F0084653D /* ICM_ViewController.m in Sources */,
 				CE151C521810BB8C0084653D /* ICM_Segue_RightToLeft.m in Sources */,
 				CE151C911810F7380084653D /* ICM_StartingViewController.m in Sources */,
@@ -577,6 +619,7 @@
 				CE151C321810990F0084653D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE151C331810990F0084653D /* Build configuration list for PBXNativeTarget "RoomFinderTests" */ = {
 			isa = XCConfigurationList;
@@ -585,6 +628,7 @@
 				CE151C351810990F0084653D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

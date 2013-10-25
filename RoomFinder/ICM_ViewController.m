@@ -7,6 +7,7 @@
 //
 
 #import "ICM_ViewController.h"
+#import "ICM_Node.h"
 
 @interface ICM_ViewController ()
 
@@ -17,6 +18,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    ICM_Node *node = [[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078077 Longitude:-114.129432 Photo:[[UIImage alloc] initWithContentsOfFile:@"panorama1.jpg"]];
+
+    NSLog(@"inside = %hhd", [node isInside]);
+    NSLog(@"groundLevel = %hhd", [node isGroundLevel]);
+    NSLog(@"lattitude = %f", node.location.latitude);
+    NSLog(@"longitude = %f", node.location.longitude);
+    if (node.photo == Nil)
+        NSLog(@"Photo is nil");
+    else
+        NSLog(@"Photo is not nil");
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

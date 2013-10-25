@@ -11,6 +11,6 @@
 @interface ICM_Model : NSObject
 
 @property (strong, nonatomic) NSMutableArray *buildingList;
-@property NSInteger FUCK;
+@property (strong, nonatomic) NSArray *nodeList;
 
 @end
