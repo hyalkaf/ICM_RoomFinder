@@ -22,7 +22,8 @@
         [_buildingList addObject:@"ST - Science Theatres"];
         [_buildingList addObject:@"CH - Craigie Hall"];
         
-
+        //_startNode = [[ICM_Node alloc] init];
+        //_endNode = [[ICM_Node alloc] init];
         
         _nodeList = [[NSMutableArray alloc] init];
         
@@ -95,6 +96,12 @@
         
     }
     return self;
+}
+
+- (void)addStartNode:(ICM_Node*)nodel;
+{
+    _startNode = [[ICM_Node alloc] init];
+    _startNode = nodel;
 }
 
 // singleton function

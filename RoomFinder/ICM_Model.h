@@ -7,13 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ICM_Node.h"
 
 @interface ICM_Model : NSObject
 
 @property (strong, nonatomic) NSMutableArray *buildingList;
 @property (strong, nonatomic) NSMutableArray *nodeList;
 @property (strong, nonatomic) NSMutableArray *adjacancyMatrix;
+@property (strong, nonatomic) ICM_Node *startNode;
+@property (strong, nonatomic) ICM_Node *endNode;
+
 
 + (id)sharedModel;
+- (void)addStartNode:(ICM_Node*)nodel;
 
 @end

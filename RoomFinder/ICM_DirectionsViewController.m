@@ -7,6 +7,7 @@
 //
 
 #import "ICM_DirectionsViewController.h"
+#include "ICM_Model.h"
 
 @interface ICM_DirectionsViewController ()
 
@@ -21,6 +22,23 @@
         // Custom initialization
     }
     return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    ICM_Model *sharedModel = [ICM_Model sharedModel];
+    if ([sharedModel startNode])
+    {
+        [_startButton setTitle:[NSString stringWithFormat:@"From: %@", [[sharedModel startNode] name]] forState: UIControlStateNormal];
+    }
+    if ([sharedModel endNode])
+    {
+        
+        [_destinationButton setTitle:[NSString stringWithFormat:@"To: %@", [[sharedModel endNode] name]] forState: UIControlStateNormal];
+//        _destinationButton.text = [[sharedModel endNode] name];
+ ///       _destinationButton.textAlignment = NSTextAlignmentCenter;
+    }
+    [self.view setNeedsDisplay];
 }
 
 - (void)viewDidLoad

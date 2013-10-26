@@ -44,6 +44,11 @@
 		CE151C881810D8050084653D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C871810D8050084653D /* SystemConfiguration.framework */; };
 		CE151C8E1810E9380084653D /* ICM_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C8D1810E9380084653D /* ICM_Model.m */; };
 		CE151C911810F7380084653D /* ICM_StartingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C901810F7380084653D /* ICM_StartingViewController.m */; };
+		CE9BEFC3181C70A100BF5343 /* ICM_EndingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BEFC2181C70A100BF5343 /* ICM_EndingViewController.m */; };
+		CE9BEFCB181C769700BF5343 /* GIS_Icon1-58.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9BEFCA181C769700BF5343 /* GIS_Icon1-58.png */; };
+		CE9BEFCE181C777D00BF5343 /* apple-touch-icon-80x80-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9BEFCC181C777D00BF5343 /* apple-touch-icon-80x80-precomposed.png */; };
+		CE9BEFCF181C777D00BF5343 /* apple-touch-icon-120x120-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9BEFCD181C777D00BF5343 /* apple-touch-icon-120x120-precomposed.png */; };
+		CE9BEFD1181C7F4B00BF5343 /* Splash screen 640x1136px.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9BEFD0181C7F4B00BF5343 /* Splash screen 640x1136px.png */; };
 		CE9F9868181B3A0B00C106E2 /* menuImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9F9867181B3A0B00C106E2 /* menuImage2.png */; };
 		CEA257DA1811E1240017371B /* ICM_Node.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA257D91811E1240017371B /* ICM_Node.m */; };
 		CEA257DE1811EA650017371B /* panorama1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEA257DD1811EA650017371B /* panorama1.jpg */; };
@@ -108,6 +113,12 @@
 		CE151C8D1810E9380084653D /* ICM_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_Model.m; sourceTree = "<group>"; };
 		CE151C8F1810F7380084653D /* ICM_StartingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_StartingViewController.h; sourceTree = "<group>"; };
 		CE151C901810F7380084653D /* ICM_StartingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_StartingViewController.m; sourceTree = "<group>"; };
+		CE9BEFC1181C70A100BF5343 /* ICM_EndingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_EndingViewController.h; sourceTree = "<group>"; };
+		CE9BEFC2181C70A100BF5343 /* ICM_EndingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_EndingViewController.m; sourceTree = "<group>"; };
+		CE9BEFCA181C769700BF5343 /* GIS_Icon1-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GIS_Icon1-58.png"; sourceTree = "<group>"; };
+		CE9BEFCC181C777D00BF5343 /* apple-touch-icon-80x80-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-80x80-precomposed.png"; sourceTree = "<group>"; };
+		CE9BEFCD181C777D00BF5343 /* apple-touch-icon-120x120-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-120x120-precomposed.png"; sourceTree = "<group>"; };
+		CE9BEFD0181C7F4B00BF5343 /* Splash screen 640x1136px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash screen 640x1136px.png"; sourceTree = "<group>"; };
 		CE9F9867181B3A0B00C106E2 /* menuImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuImage2.png; sourceTree = "<group>"; };
 		CEA257D81811E1240017371B /* ICM_Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_Node.h; sourceTree = "<group>"; };
 		CEA257D91811E1240017371B /* ICM_Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_Node.m; sourceTree = "<group>"; };
@@ -212,7 +223,11 @@
 		CE151C081810990F0084653D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE9BEFCC181C777D00BF5343 /* apple-touch-icon-80x80-precomposed.png */,
+				CE9BEFCD181C777D00BF5343 /* apple-touch-icon-120x120-precomposed.png */,
+				CE9BEFD0181C7F4B00BF5343 /* Splash screen 640x1136px.png */,
 				CEA257DD1811EA650017371B /* panorama1.jpg */,
+				CE9BEFCA181C769700BF5343 /* GIS_Icon1-58.png */,
 				CE9F9867181B3A0B00C106E2 /* menuImage2.png */,
 				CE151C3E1810AB4E0084653D /* university-of-calgary.png */,
 				CE151C691810C9790084653D /* university.jpeg */,
@@ -256,6 +271,8 @@
 				CE151C591810BF9B0084653D /* ICM_SettingsViewController.m */,
 				CE151C8F1810F7380084653D /* ICM_StartingViewController.h */,
 				CE151C901810F7380084653D /* ICM_StartingViewController.m */,
+				CE9BEFC1181C70A100BF5343 /* ICM_EndingViewController.h */,
+				CE9BEFC2181C70A100BF5343 /* ICM_EndingViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -373,8 +390,12 @@
 				CE151C1A1810990F0084653D /* Images.xcassets in Resources */,
 				CEA257DE1811EA650017371B /* panorama1.jpg in Resources */,
 				CE151C0C1810990F0084653D /* InfoPlist.strings in Resources */,
+				CE9BEFCB181C769700BF5343 /* GIS_Icon1-58.png in Resources */,
+				CE9BEFCF181C777D00BF5343 /* apple-touch-icon-120x120-precomposed.png in Resources */,
+				CE9BEFD1181C7F4B00BF5343 /* Splash screen 640x1136px.png in Resources */,
 				CE151C151810990F0084653D /* Main.storyboard in Resources */,
 				CE151C721810D7730084653D /* GoogleMaps.bundle in Resources */,
+				CE9BEFCE181C777D00BF5343 /* apple-touch-icon-80x80-precomposed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +423,7 @@
 				CE151C911810F7380084653D /* ICM_StartingViewController.m in Sources */,
 				CE151C8E1810E9380084653D /* ICM_Model.m in Sources */,
 				CE151C121810990F0084653D /* ICM_AppDelegate.m in Sources */,
+				CE9BEFC3181C70A100BF5343 /* ICM_EndingViewController.m in Sources */,
 				CE151C0E1810990F0084653D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

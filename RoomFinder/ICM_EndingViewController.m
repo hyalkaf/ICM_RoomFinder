@@ -1,19 +1,20 @@
 //
-//  ICM_StartingViewController.m
+//  ICM_EndingViewController.m
 //  RoomFinder
 //
-//  Created by Brett Nishikawa on 2013-10-17.
+//  Created by Brett Nishikawa on 2013-10-26.
 //  Copyright (c) 2013 ICM. All rights reserved.
 //
 
-#import "ICM_StartingViewController.h"
+#import "ICM_EndingViewController.h"
 #import "ICM_Model.h"
 
-@interface ICM_StartingViewController ()
+@interface ICM_EndingViewController ()
 
 @end
 
-@implementation ICM_StartingViewController
+@implementation ICM_EndingViewController
+
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,11 +29,11 @@
 {
     [super viewDidLoad];
     
-
+    
     [self.tableView reloadData];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
- 
+    
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
@@ -58,10 +59,11 @@
     }
     ICM_Model *sharedModel = [ICM_Model sharedModel];
     cell.textLabel.text = [[[sharedModel nodeList] objectAtIndex:indexPath.row] name];
-    if ([[sharedModel endNode] isEqual:[[sharedModel nodeList] objectAtIndex:indexPath.row]])
+    if ([[sharedModel startNode] isEqual:[[sharedModel nodeList] objectAtIndex:indexPath.row]])
     {
         cell.textLabel.textColor = [UIColor lightGrayColor];
     }
+    
     [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
     return cell;
 }
@@ -71,7 +73,7 @@
     // Determine if row is selectable based on the NSIndexPath.
     ICM_Model *sharedModel = [ICM_Model sharedModel];
     
-    if ([[sharedModel endNode] isEqual:[[sharedModel nodeList] objectAtIndex:path.row]])
+    if ([[sharedModel startNode] isEqual:[[sharedModel nodeList] objectAtIndex:path.row]])
     {
         return nil;
     }
@@ -83,11 +85,11 @@
 {
     ICM_Model *sharedModel = [ICM_Model sharedModel];
     
-    [sharedModel setStartNode:[[sharedModel nodeList] objectAtIndex:indexPath.row]];
-
+    [sharedModel setEndNode:[[sharedModel nodeList] objectAtIndex:indexPath.row]];
+    
     [self.navigationController popViewControllerAnimated:YES];
-//    NSLog(@"Name of start node = %@", [[sharedModel startNode] name]);
-
+    //    NSLog(@"Name of start node = %@", [[sharedModel startNode] name]);
+    
 }
 
 @end
