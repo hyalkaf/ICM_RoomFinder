@@ -16,6 +16,8 @@
 @property (nonatomic, getter = isRoom) BOOL roomNode;
 //@property (nonatomic) CLLocationCoordinate2D location;
 @property (strong, nonatomic) UIImage *photo;
+// neighboursAndWeights is a 2d array where the first column is the node connected to it
+// and the second column is the distance
 @property (strong, nonatomic) NSMutableArray *neighboursAndWeights;
 @property (nonatomic) NSString* name;
 

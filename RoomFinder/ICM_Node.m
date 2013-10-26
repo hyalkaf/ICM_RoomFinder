@@ -14,7 +14,9 @@
 
 @implementation ICM_Node
 
-
+// custom initializer
+//
+// if default properties are changed, make sure to update this function
 - (id)initWithValues:(BOOL)inside Ground:(BOOL)ground Lattitude:(float)lattitude Longitude:(float)longitude Photo:(UIImage*)photo Name:(NSString*)name;
 {
     if (self = [super init])
@@ -29,6 +31,8 @@
     return self;
 }
 
+
+// adds a neighbour to a node
 - (void)addNeighbour:(ICM_Node*)node Distance:(NSNumber*)distance;
 {
     [_neighboursAndWeights addObject:[[NSMutableArray alloc] init]];
