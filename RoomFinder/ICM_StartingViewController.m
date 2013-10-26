@@ -19,7 +19,7 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        
+        self.searchDisplayController.displaysSearchBarInNavigationBar = YES;
     }
     return self;
 }
@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
 
     [self.tableView reloadData];
     // Uncomment the following line to preserve selection between presentations.

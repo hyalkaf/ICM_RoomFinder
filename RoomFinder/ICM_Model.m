@@ -22,8 +22,8 @@
         [_buildingList addObject:@"CH - Craigie Hall"];
         
         _nodeList = [[NSMutableArray alloc] init];
-        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078077 Longitude:-114.129432 Photo:[UIImage imageNamed:@"1.jpg"] Name:@"Node 0"]];
         
+        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078077 Longitude:-114.129432 Photo:[UIImage imageNamed:@"1.jpg"] Name:@"Node 0"]];
         [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078077 Longitude:-114.129432 Photo:[UIImage imageNamed:@"2.jpg"] Name:@"Node 1"]];
         [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078077 Longitude:-114.129432 Photo:[UIImage imageNamed:@"3.jpg"] Name:@"Node 2"]];
         [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078077 Longitude:-114.129432 Photo:[UIImage imageNamed:@"4.jpg"] Name:@"Node 3"]];
@@ -75,10 +75,10 @@
             }
         }
         
-        //        for (int x = 0; x < [_nodeList count]; x++)
-        //        {
-        //            NSLog(@"%@ %@ %@ %@", [[_adjacancyMatrix objectAtIndex:x] objectAtIndex:0], [[_adjacancyMatrix objectAtIndex:x] objectAtIndex:1], [[_adjacancyMatrix objectAtIndex:x] objectAtIndex:2], [[_adjacancyMatrix objectAtIndex:x] objectAtIndex:3]);
-        //        }
+                for (int x = 0; x < [_nodeList count]; x++)
+                {
+                    NSLog(@"%@ %@ %@ %@", [[_adjacancyMatrix objectAtIndex:x] objectAtIndex:0], [[_adjacancyMatrix objectAtIndex:x] objectAtIndex:1], [[_adjacancyMatrix objectAtIndex:x] objectAtIndex:2], [[_adjacancyMatrix objectAtIndex:x] objectAtIndex:3]);
+                }
         
         
     }
