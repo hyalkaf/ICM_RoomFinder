@@ -38,6 +38,10 @@
 //        _destinationButton.text = [[sharedModel endNode] name];
  ///       _destinationButton.textAlignment = NSTextAlignmentCenter;
     }
+    if ([sharedModel startNode] && [sharedModel endNode])
+    {
+        _calculateRouteButton.enabled = YES;
+    }
     [self.view setNeedsDisplay];
 }
 

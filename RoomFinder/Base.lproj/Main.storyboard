@@ -141,6 +141,7 @@
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
+                        <outlet property="calculateRouteButton" destination="jgF-yT-1ET" id="NA2-u4-eeE"/>
                         <outlet property="destinationButton" destination="KEg-Ef-8m8" id="13X-B2-Nsi"/>
                         <outlet property="startButton" destination="th8-13-OjP" id="Rs2-PZ-MXm"/>
                     </connections>
@@ -197,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="473" y="-1398"/>
         </scene>
-        <!--View Controller-->
+        <!--Selection Type View Controller-->
         <scene sceneID="llh-gB-XuQ">
             <objects>
-                <viewController id="KXr-tm-6qL" sceneMemberID="viewController">
+                <viewController id="KXr-tm-6qL" customClass="ICM_SelectionTypeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hUm-QL-hws">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -224,7 +225,7 @@
                                 <rect key="frame" x="0.0" y="526" width="320" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="From GPS">
+                                <state key="normal" title="From Current Location">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -326,7 +327,6 @@
     </scenes>
     <resources>
         <image name="menuImage.jpg" width="790" height="599"/>
-        <image name="university.jpeg" width="1525" height="984"/>
         <image name="university.jpeg" width="1525" height="984"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

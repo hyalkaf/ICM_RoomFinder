@@ -49,6 +49,7 @@
 		CE9BEFCE181C777D00BF5343 /* apple-touch-icon-80x80-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9BEFCC181C777D00BF5343 /* apple-touch-icon-80x80-precomposed.png */; };
 		CE9BEFCF181C777D00BF5343 /* apple-touch-icon-120x120-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9BEFCD181C777D00BF5343 /* apple-touch-icon-120x120-precomposed.png */; };
 		CE9BEFD1181C7F4B00BF5343 /* Splash screen 640x1136px.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9BEFD0181C7F4B00BF5343 /* Splash screen 640x1136px.png */; };
+		CE9BEFD4181C801C00BF5343 /* ICM_SelectionTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BEFD3181C801C00BF5343 /* ICM_SelectionTypeViewController.m */; };
 		CE9F9868181B3A0B00C106E2 /* menuImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9F9867181B3A0B00C106E2 /* menuImage2.png */; };
 		CEA257DA1811E1240017371B /* ICM_Node.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA257D91811E1240017371B /* ICM_Node.m */; };
 		CEA257DE1811EA650017371B /* panorama1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CEA257DD1811EA650017371B /* panorama1.jpg */; };
@@ -119,6 +120,8 @@
 		CE9BEFCC181C777D00BF5343 /* apple-touch-icon-80x80-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-80x80-precomposed.png"; sourceTree = "<group>"; };
 		CE9BEFCD181C777D00BF5343 /* apple-touch-icon-120x120-precomposed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon-120x120-precomposed.png"; sourceTree = "<group>"; };
 		CE9BEFD0181C7F4B00BF5343 /* Splash screen 640x1136px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Splash screen 640x1136px.png"; sourceTree = "<group>"; };
+		CE9BEFD2181C801C00BF5343 /* ICM_SelectionTypeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_SelectionTypeViewController.h; sourceTree = "<group>"; };
+		CE9BEFD3181C801C00BF5343 /* ICM_SelectionTypeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_SelectionTypeViewController.m; sourceTree = "<group>"; };
 		CE9F9867181B3A0B00C106E2 /* menuImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menuImage2.png; sourceTree = "<group>"; };
 		CEA257D81811E1240017371B /* ICM_Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_Node.h; sourceTree = "<group>"; };
 		CEA257D91811E1240017371B /* ICM_Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_Node.m; sourceTree = "<group>"; };
@@ -273,6 +276,8 @@
 				CE151C901810F7380084653D /* ICM_StartingViewController.m */,
 				CE9BEFC1181C70A100BF5343 /* ICM_EndingViewController.h */,
 				CE9BEFC2181C70A100BF5343 /* ICM_EndingViewController.m */,
+				CE9BEFD2181C801C00BF5343 /* ICM_SelectionTypeViewController.h */,
+				CE9BEFD3181C801C00BF5343 /* ICM_SelectionTypeViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -415,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE151C4F1810B6EF0084653D /* ICM_DirectionsViewController.m in Sources */,
+				CE9BEFD4181C801C00BF5343 /* ICM_SelectionTypeViewController.m in Sources */,
 				CE151C5A1810BF9B0084653D /* ICM_SettingsViewController.m in Sources */,
 				CE151C571810BE720084653D /* ICM_MapViewController.m in Sources */,
 				CEA257DA1811E1240017371B /* ICM_Node.m in Sources */,

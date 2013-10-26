@@ -11,6 +11,7 @@
 @interface ICM_DirectionsViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIButton *destinationButton;
 @property (strong, nonatomic) IBOutlet UIButton *startButton;
+@property (strong, nonatomic) IBOutlet UIButton *calculateRouteButton;
 
 
 @end

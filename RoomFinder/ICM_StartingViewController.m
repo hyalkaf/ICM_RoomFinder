@@ -85,7 +85,9 @@
     
     [sharedModel setStartNode:[[sharedModel nodeList] objectAtIndex:indexPath.row]];
 
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popToViewController:[self.navigationController.viewControllers objectAtIndex:[self.navigationController.viewControllers count]-3] animated:YES];
+    //[self.navigationController popViewControllerAnimated:YES];
+
 //    NSLog(@"Name of start node = %@", [[sharedModel startNode] name]);
 
 }
