@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface ICM_SelectionTypeViewController : UIViewController
+- (IBAction)getGPSLocation:(id)sender;
 
 @end

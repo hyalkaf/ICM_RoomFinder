@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 
 @interface ICM_Node : NSObject
@@ -14,7 +15,7 @@
 @property (nonatomic, getter = isInside) BOOL inside;
 @property (nonatomic, getter = isGroundLevel) BOOL groundLevel;
 @property (nonatomic, getter = isRoom) BOOL roomNode;
-//@property (nonatomic) CLLocationCoordinate2D location;
+@property (nonatomic) CLLocationCoordinate2D nodeLocation;
 @property (strong, nonatomic) UIImage *photo;
 // neighboursAndWeights is a 2d array where the first column is the node connected to it
 // and the second column is the distance

@@ -28,10 +28,10 @@
         _nodeList = [[NSMutableArray alloc] init];
         
         // adds the initial 4 nodes
-        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078077 Longitude:-114.129432 Photo:[UIImage imageNamed:@"1.jpg"] Name:@"Node 0"]];
-        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078077 Longitude:-114.129432 Photo:[UIImage imageNamed:@"2.jpg"] Name:@"Node 1"]];
-        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078077 Longitude:-114.129432 Photo:[UIImage imageNamed:@"3.jpg"] Name:@"Node 2"]];
-        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078077 Longitude:-114.129432 Photo:[UIImage imageNamed:@"4.jpg"] Name:@"Node 3"]];
+        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.0779 Longitude:-114.128651 Photo:[UIImage imageNamed:@"1.jpg"] Name:@"Node 0"]];
+        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.0776 Longitude:-114.128053 Photo:[UIImage imageNamed:@"2.jpg"] Name:@"Node 1"]];
+        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.077772 Longitude:-114.127238 Photo:[UIImage imageNamed:@"3.jpg"] Name:@"Node 2"]];
+        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078235 Longitude:-114.127691 Photo:[UIImage imageNamed:@"4.jpg"] Name:@"Node 3"]];
         
         // neighbours for node 0
         [[_nodeList objectAtIndex:0] addNeighbour:[_nodeList objectAtIndex:1] Distance:[NSNumber numberWithInt:1]];

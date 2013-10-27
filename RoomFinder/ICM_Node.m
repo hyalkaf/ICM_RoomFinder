@@ -23,7 +23,7 @@
     {
         _inside = inside;
         _groundLevel = ground;
-        //_location = CLLocationCoordinate2DMake(lattitude, longitude);
+        _nodeLocation = CLLocationCoordinate2DMake(lattitude, longitude);
         _photo = photo;
         _neighboursAndWeights = [[NSMutableArray alloc] init];
         _name = name;
