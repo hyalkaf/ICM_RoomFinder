@@ -15,39 +15,37 @@
 {
     if (self = [super init])
     {
+        _shortestPath = [[NSArray alloc] init];
         // default list of buildings
         _buildingList = [[NSMutableArray alloc] init];
         [_buildingList addObject:@"MFH - Murray Fraser Hall"];
         [_buildingList addObject:@"MS - Mathematical Science"];
         [_buildingList addObject:@"ST - Science Theatres"];
         [_buildingList addObject:@"CH - Craigie Hall"];
-        
-        //_startNode = [[ICM_Node alloc] init];
-        //_endNode = [[ICM_Node alloc] init];
-        
+               
         _nodeList = [[NSMutableArray alloc] init];
-        
+
         // adds the initial 4 nodes
         [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.0779 Longitude:-114.128651 Photo:[UIImage imageNamed:@"1.jpg"] Name:@"Node 0"]];
-        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.0776 Longitude:-114.128053 Photo:[UIImage imageNamed:@"2.jpg"] Name:@"Node 1"]];
-        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.077772 Longitude:-114.127238 Photo:[UIImage imageNamed:@"3.jpg"] Name:@"Node 2"]];
-        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078235 Longitude:-114.127691 Photo:[UIImage imageNamed:@"4.jpg"] Name:@"Node 3"]];
+        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.078235 Longitude:-114.127691 Photo:[UIImage imageNamed:@"2.jpg"] Name:@"Node 1"]];
+        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.0776 Longitude:-114.128053 Photo:[UIImage imageNamed:@"3.jpg"] Name:@"Node 2"]];
+        [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.077772 Longitude:-114.127238 Photo:[UIImage imageNamed:@"4.jpg"] Name:@"Node 3"]];
         
         // neighbours for node 0
         [[_nodeList objectAtIndex:0] addNeighbour:[_nodeList objectAtIndex:1] Distance:[NSNumber numberWithInt:1]];
-        [[_nodeList objectAtIndex:0] addNeighbour:[_nodeList objectAtIndex:2] Distance:[NSNumber numberWithInt:2]];
+        [[_nodeList objectAtIndex:0] addNeighbour:[_nodeList objectAtIndex:2] Distance:[NSNumber numberWithInt:20]];
         
         // neighbours for node 1
         [[_nodeList objectAtIndex:1] addNeighbour:[_nodeList objectAtIndex:0] Distance:[NSNumber numberWithInt:1]];
         [[_nodeList objectAtIndex:1] addNeighbour:[_nodeList objectAtIndex:3] Distance:[NSNumber numberWithInt:1]];
         
         // neighbours for node 2
-        [[_nodeList objectAtIndex:2] addNeighbour:[_nodeList objectAtIndex:0] Distance:[NSNumber numberWithInt:2]];
-        [[_nodeList objectAtIndex:2] addNeighbour:[_nodeList objectAtIndex:3] Distance:[NSNumber numberWithInt:2]];
+        [[_nodeList objectAtIndex:2] addNeighbour:[_nodeList objectAtIndex:0] Distance:[NSNumber numberWithInt:20]];
+        [[_nodeList objectAtIndex:2] addNeighbour:[_nodeList objectAtIndex:3] Distance:[NSNumber numberWithInt:1]];
         
         // neighbours for node 3
         [[_nodeList objectAtIndex:3] addNeighbour:[_nodeList objectAtIndex:1] Distance:[NSNumber numberWithInt:1]];
-        [[_nodeList objectAtIndex:3] addNeighbour:[_nodeList objectAtIndex:2] Distance:[NSNumber numberWithInt:2]];
+        [[_nodeList objectAtIndex:3] addNeighbour:[_nodeList objectAtIndex:2] Distance:[NSNumber numberWithInt:1]];
         
         _adjacancyMatrix = [[NSMutableArray alloc] initWithCapacity:[_nodeList count]];
         
@@ -114,5 +112,76 @@
     return singleModel;
 }
 
+- (NSArray*)dijsktra:(ICM_Node*)startNode EndNode:(ICM_Node*)endNode;
+{
+    int n = [_nodeList count];
+    float distance[n];
+    float precede[n];
+    int source;
+    int destination;
+    BOOL visit[n];
+    for (int i = 0; i < [_nodeList count]; i++)
+    {
+        if ([[_nodeList objectAtIndex:i] isEqual:startNode])
+            source = i;
+        if ([[_nodeList objectAtIndex:i] isEqual:endNode])
+            destination = i;
+    }
+    for (int i = 0; i < n; i++)
+    {
+        distance[i] = 99999;
+        precede[i] = 99999;
+    }
+    distance[source] = 0;
+    int current = source;
+    while (current != destination)
+    {
+        float distcurr = distance[current];
+        float smalldist = 99999;
+        int k = -1;
+        visit[current] = true;
+        for (int i = 0; i < n; i++)
+        {
+            if (visit[i])
+                continue;
+            int newdist;
+            if ([[[_adjacancyMatrix objectAtIndex:current] objectAtIndex:i] integerValue] != -1)
+                newdist = distcurr + [[[_adjacancyMatrix objectAtIndex:current] objectAtIndex:i] integerValue];
+            else
+                newdist = 999999;
+            if (newdist < distance[i])
+            {
+                distance[i] = newdist;
+                precede[i] = current;
+            }
+            if (distance[i] < smalldist)
+            {
+                smalldist = distance[i];
+                k = i;
+            }
+        }
+        current = k;
+    }
+    int i = destination;
+    int finall = 0;
+    int path[n];
+    path[finall] = destination;
+    finall++;
+    while (precede[i] != source)
+    {
+        i = precede[i];
+        path[finall] = i;
+        finall++;
+    }
+    path[finall] = source;
+    NSMutableArray *result = [[NSMutableArray alloc] initWithCapacity:(finall+1)];
+    int temp = finall;
+    for (int x = 0; x < finall+1; x++)
+    {
+        [result insertObject:[_nodeList objectAtIndex:(path[temp])] atIndex:x];
+        temp--;
+    }
+    return result;
+}
 
 @end

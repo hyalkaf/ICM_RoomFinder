@@ -44,6 +44,8 @@
 		CE151C881810D8050084653D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C871810D8050084653D /* SystemConfiguration.framework */; };
 		CE151C8E1810E9380084653D /* ICM_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C8D1810E9380084653D /* ICM_Model.m */; };
 		CE151C911810F7380084653D /* ICM_StartingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C901810F7380084653D /* ICM_StartingViewController.m */; };
+		CE8C1B2F181E039A00F3EA6E /* ICM_RouteMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C1B2E181E039A00F3EA6E /* ICM_RouteMapViewController.m */; };
+		CE8C1B35181E14BE00F3EA6E /* ICM_PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C1B34181E14BE00F3EA6E /* ICM_PictureViewController.m */; };
 		CE9BEFC3181C70A100BF5343 /* ICM_EndingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BEFC2181C70A100BF5343 /* ICM_EndingViewController.m */; };
 		CE9BEFCB181C769700BF5343 /* GIS_Icon1-58.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9BEFCA181C769700BF5343 /* GIS_Icon1-58.png */; };
 		CE9BEFCE181C777D00BF5343 /* apple-touch-icon-80x80-precomposed.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9BEFCC181C777D00BF5343 /* apple-touch-icon-80x80-precomposed.png */; };
@@ -114,6 +116,10 @@
 		CE151C8D1810E9380084653D /* ICM_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_Model.m; sourceTree = "<group>"; };
 		CE151C8F1810F7380084653D /* ICM_StartingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_StartingViewController.h; sourceTree = "<group>"; };
 		CE151C901810F7380084653D /* ICM_StartingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_StartingViewController.m; sourceTree = "<group>"; };
+		CE8C1B2D181E039A00F3EA6E /* ICM_RouteMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_RouteMapViewController.h; sourceTree = "<group>"; };
+		CE8C1B2E181E039A00F3EA6E /* ICM_RouteMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_RouteMapViewController.m; sourceTree = "<group>"; };
+		CE8C1B33181E14BE00F3EA6E /* ICM_PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_PictureViewController.h; sourceTree = "<group>"; };
+		CE8C1B34181E14BE00F3EA6E /* ICM_PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_PictureViewController.m; sourceTree = "<group>"; };
 		CE9BEFC1181C70A100BF5343 /* ICM_EndingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_EndingViewController.h; sourceTree = "<group>"; };
 		CE9BEFC2181C70A100BF5343 /* ICM_EndingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_EndingViewController.m; sourceTree = "<group>"; };
 		CE9BEFCA181C769700BF5343 /* GIS_Icon1-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GIS_Icon1-58.png"; sourceTree = "<group>"; };
@@ -278,6 +284,10 @@
 				CE9BEFC2181C70A100BF5343 /* ICM_EndingViewController.m */,
 				CE9BEFD2181C801C00BF5343 /* ICM_SelectionTypeViewController.h */,
 				CE9BEFD3181C801C00BF5343 /* ICM_SelectionTypeViewController.m */,
+				CE8C1B2D181E039A00F3EA6E /* ICM_RouteMapViewController.h */,
+				CE8C1B2E181E039A00F3EA6E /* ICM_RouteMapViewController.m */,
+				CE8C1B33181E14BE00F3EA6E /* ICM_PictureViewController.h */,
+				CE8C1B34181E14BE00F3EA6E /* ICM_PictureViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -424,6 +434,7 @@
 				CE151C5A1810BF9B0084653D /* ICM_SettingsViewController.m in Sources */,
 				CE151C571810BE720084653D /* ICM_MapViewController.m in Sources */,
 				CEA257DA1811E1240017371B /* ICM_Node.m in Sources */,
+				CE8C1B2F181E039A00F3EA6E /* ICM_RouteMapViewController.m in Sources */,
 				CE151C181810990F0084653D /* ICM_ViewController.m in Sources */,
 				CE151C521810BB8C0084653D /* ICM_Segue_RightToLeft.m in Sources */,
 				CE151C911810F7380084653D /* ICM_StartingViewController.m in Sources */,
@@ -431,6 +442,7 @@
 				CE151C121810990F0084653D /* ICM_AppDelegate.m in Sources */,
 				CE9BEFC3181C70A100BF5343 /* ICM_EndingViewController.m in Sources */,
 				CE151C0E1810990F0084653D /* main.m in Sources */,
+				CE8C1B35181E14BE00F3EA6E /* ICM_PictureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

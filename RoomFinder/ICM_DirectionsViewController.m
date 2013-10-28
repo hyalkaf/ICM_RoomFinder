@@ -60,6 +60,7 @@
 - (IBAction)calculateRoute:(id)sender
 {
     ICM_Model *sharedModel = [ICM_Model sharedModel];
+    [sharedModel setShortestPath:[sharedModel dijsktra:[sharedModel startNode] EndNode:[sharedModel endNode]]];
 //    NSArray *results = [[NSArray alloc] initWithArray:([sharedModel dijsktra:[sharedModel startNode] EndNode:[sharedModel endNode]])];
 //    NSLog(@"%@ %@ %@", [[results objectAtIndex:0] name], [[results objectAtIndex:1] name], [[results objectAtIndex:2] name]);
 }

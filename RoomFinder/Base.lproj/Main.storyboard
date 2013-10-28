@@ -56,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-372" y="-639"/>
+            <point key="canvasLocation" x="-526" y="-639"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="wGd-wk-woO">
@@ -70,7 +70,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tw7-KJ-ME5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149" y="-631"/>
+            <point key="canvasLocation" x="-23" y="-639"/>
+        </scene>
+        <!--Route Map View Controller-->
+        <scene sceneID="tyC-qD-8ol">
+            <objects>
+                <viewController id="ScH-Ue-oKK" customClass="ICM_RouteMapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MLV-sF-Bjr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="qit-dM-bHG" kind="custom" identifier="mySegue" customClass="ICM_Segue_RightToLeft" id="M3t-ko-1HB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24o-so-Eu3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="473" y="-733"/>
+        </scene>
+        <!--Picture View Controller-->
+        <scene sceneID="Xh1-UZ-nt9">
+            <objects>
+                <viewController id="qit-dM-bHG" customClass="ICM_PictureViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JXF-q5-Zb8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="w38-XQ-lk9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="w38-XQ-lk9" id="MDZ-ir-GPc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RbB-V5-Lge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="-733"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="PGn-SW-Tq9">
@@ -93,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ugn-Xl-2IS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="149" y="47"/>
+            <point key="canvasLocation" x="-23" y="31"/>
         </scene>
         <!--Directions View Controller-->
         <scene sceneID="jmE-lP-Ggn">
@@ -123,6 +163,7 @@
                                 </state>
                                 <connections>
                                     <action selector="calculateRoute:" destination="uTd-Cx-mc8" eventType="touchUpInside" id="MiM-64-iYG"/>
+                                    <segue destination="ScH-Ue-oKK" kind="custom" customClass="ICM_Segue_RightToLeft" id="uuT-eg-sS4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="th8-13-OjP">
@@ -345,7 +386,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AEY-cq-gbV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-798" y="-639"/>
+            <point key="canvasLocation" x="-918" y="-639"/>
         </scene>
     </scenes>
     <resources>

@@ -16,9 +16,11 @@
 @property (strong, nonatomic) NSMutableArray *adjacancyMatrix;
 @property (strong, nonatomic) ICM_Node *startNode;
 @property (strong, nonatomic) ICM_Node *endNode;
+@property (strong, nonatomic) NSArray *shortestPath;
 
 
 + (id)sharedModel;
 - (void)addStartNode:(ICM_Node*)nodel;
+- (NSArray*)dijsktra:(ICM_Node*)startNode EndNode:(ICM_Node*)endNode;
 
 @end
