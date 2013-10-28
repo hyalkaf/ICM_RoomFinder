@@ -8,7 +8,7 @@
 
 #import "ICM_ViewController.h"
 #import "ICM_Node.h"
-
+#import "ICM_Model.h"
 
 @interface ICM_ViewController ()
 
@@ -19,7 +19,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

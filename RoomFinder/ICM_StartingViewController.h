@@ -11,7 +11,9 @@
 
 @interface ICM_StartingViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
 
-@property (strong, nonatomic) IBOutlet UISearchBar *buildingSearchBar;
+
 @property (strong, nonatomic) NSMutableArray *searchResults;
+@property (strong, nonatomic) IBOutlet UITableView *startingSearchBar;
+@property int x;
 
 @end

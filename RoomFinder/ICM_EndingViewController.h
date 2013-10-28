@@ -11,7 +11,8 @@
 
 @interface ICM_EndingViewController : UITableViewController <UISearchBarDelegate, UISearchDisplayDelegate>
 
-@property (strong, nonatomic) IBOutlet UISearchBar *buildingSearchBar;
+@property (strong, nonatomic) IBOutlet UISearchBar *endingSearchBar;
 @property (strong, nonatomic) NSMutableArray *searchResults;
+@property int x;
 
 @end

@@ -13,5 +13,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *startButton;
 @property (strong, nonatomic) IBOutlet UIButton *calculateRouteButton;
 
+- (IBAction)calculateRoute:(id)sender;
 
 @end

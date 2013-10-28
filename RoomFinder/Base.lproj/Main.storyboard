@@ -121,6 +121,9 @@
                                 <state key="normal" title="Calculate Route">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateRoute:" destination="uTd-Cx-mc8" eventType="touchUpInside" id="MiM-64-iYG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" id="th8-13-OjP">
                                 <rect key="frame" x="-2" y="455" width="325" height="30"/>
@@ -182,7 +185,9 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="endingSearchBar" destination="eED-fr-aRE" id="wdQ-Cx-epo"/>
                         <outlet property="searchDisplayController" destination="uXI-8f-7bN" id="p8J-Ox-YSa"/>
+                        <segue destination="605-fc-wgZ" kind="push" id="5RV-Dc-0DM"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7E-gf-tZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -197,6 +202,21 @@
                 </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="473" y="-1398"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="h3Z-Ip-Wsn">
+            <objects>
+                <viewController id="605-fc-wgZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o8q-gq-BIx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PtS-1J-EvI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uCY-3c-ms5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="-1393"/>
         </scene>
         <!--Selection Type View Controller-->
         <scene sceneID="llh-gB-XuQ">
@@ -272,8 +292,8 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="buildingSearchBar" destination="pDK-y1-Mbw" id="4qY-Fx-G39"/>
                         <outlet property="searchDisplayController" destination="UbC-Ht-b8h" id="5m7-s6-6mU"/>
+                        <outlet property="startingSearchBar" destination="FyN-TA-TSP" id="6Up-y5-LmU"/>
                         <segue destination="iE5-w7-S3Z" kind="push" id="IuT-zk-lWP"/>
                     </connections>
                 </tableViewController>
@@ -288,7 +308,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="845" y="-2226"/>
+            <point key="canvasLocation" x="843" y="-2210"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mFq-si-zLf">
@@ -303,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8jB-xq-aUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1301" y="-1748"/>
+            <point key="canvasLocation" x="1331" y="-2210"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mxm-er-PFI">
