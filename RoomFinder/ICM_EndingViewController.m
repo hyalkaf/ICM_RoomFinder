@@ -70,13 +70,13 @@
     if (_x == 1)
     {
         cell.textLabel.text = [[[sharedModel nodeList] objectAtIndex:indexPath.row] name];
-        if ([[sharedModel endNode] isEqual:[[sharedModel nodeList] objectAtIndex:indexPath.row]])
+        if ([[sharedModel startNode] isEqual:[[sharedModel nodeList] objectAtIndex:indexPath.row]])
             cell.textLabel.textColor = [UIColor lightGrayColor];
     }
     else
     {
         cell.textLabel.text = [[_searchResults objectAtIndex:indexPath.row] name];
-        if ([[sharedModel endNode] isEqual:[_searchResults objectAtIndex:indexPath.row]])
+        if ([[sharedModel startNode] isEqual:[_searchResults objectAtIndex:indexPath.row]])
             cell.textLabel.textColor = [UIColor lightGrayColor];
     }
     

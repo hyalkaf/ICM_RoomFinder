@@ -40,6 +40,7 @@
 //    
 //    CLLocationDistance currentDistance = [locA distanceFromLocation:locB];
     //CLLocationDistance currentDistance = [locA distanceFromLocation:locB];
+
     CLLocation *locA = [[CLLocation alloc] initWithLatitude:_nodeLocation.latitude longitude:_nodeLocation.longitude];
     CLLocation *locB = [[CLLocation alloc] initWithLatitude:node.nodeLocation.latitude longitude:node.nodeLocation.longitude];
     CLLocationDistance distance1 = [locA distanceFromLocation:locB];

@@ -28,7 +28,6 @@
 		CE151C541810BBB30084653D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C531810BBB30084653D /* QuartzCore.framework */; };
 		CE151C571810BE720084653D /* ICM_MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C561810BE720084653D /* ICM_MapViewController.m */; };
 		CE151C5A1810BF9B0084653D /* ICM_SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C591810BF9B0084653D /* ICM_SettingsViewController.m */; };
-		CE151C6A1810C9790084653D /* university.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE151C691810C9790084653D /* university.jpeg */; };
 		CE151C701810D70C0084653D /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C6F1810D70C0084653D /* GoogleMaps.framework */; };
 		CE151C721810D7730084653D /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CE151C711810D7730084653D /* GoogleMaps.bundle */; };
 		CE151C741810D7960084653D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C731810D7960084653D /* AVFoundation.framework */; };
@@ -44,6 +43,8 @@
 		CE151C881810D8050084653D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE151C871810D8050084653D /* SystemConfiguration.framework */; };
 		CE151C8E1810E9380084653D /* ICM_Model.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C8D1810E9380084653D /* ICM_Model.m */; };
 		CE151C911810F7380084653D /* ICM_StartingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE151C901810F7380084653D /* ICM_StartingViewController.m */; };
+		CE1BF3BB1820F45900EC2364 /* university.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = CE1BF3BA1820F45900EC2364 /* university.jpeg */; };
+		CE1BF3BD1820F4F100EC2364 /* university2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE1BF3BC1820F4F100EC2364 /* university2.jpg */; };
 		CE8C1B2F181E039A00F3EA6E /* ICM_RouteMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C1B2E181E039A00F3EA6E /* ICM_RouteMapViewController.m */; };
 		CE8C1B35181E14BE00F3EA6E /* ICM_PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8C1B34181E14BE00F3EA6E /* ICM_PictureViewController.m */; };
 		CE9BEFC3181C70A100BF5343 /* ICM_EndingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BEFC2181C70A100BF5343 /* ICM_EndingViewController.m */; };
@@ -98,7 +99,6 @@
 		CE151C561810BE720084653D /* ICM_MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_MapViewController.m; sourceTree = "<group>"; };
 		CE151C581810BF9B0084653D /* ICM_SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_SettingsViewController.h; sourceTree = "<group>"; };
 		CE151C591810BF9B0084653D /* ICM_SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_SettingsViewController.m; sourceTree = "<group>"; };
-		CE151C691810C9790084653D /* university.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = university.jpeg; path = ../../../university.jpeg; sourceTree = "<group>"; };
 		CE151C6F1810D70C0084653D /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		CE151C711810D7730084653D /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		CE151C731810D7960084653D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -116,6 +116,8 @@
 		CE151C8D1810E9380084653D /* ICM_Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_Model.m; sourceTree = "<group>"; };
 		CE151C8F1810F7380084653D /* ICM_StartingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_StartingViewController.h; sourceTree = "<group>"; };
 		CE151C901810F7380084653D /* ICM_StartingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_StartingViewController.m; sourceTree = "<group>"; };
+		CE1BF3BA1820F45900EC2364 /* university.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = university.jpeg; sourceTree = "<group>"; };
+		CE1BF3BC1820F4F100EC2364 /* university2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = university2.jpg; sourceTree = "<group>"; };
 		CE8C1B2D181E039A00F3EA6E /* ICM_RouteMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_RouteMapViewController.h; sourceTree = "<group>"; };
 		CE8C1B2E181E039A00F3EA6E /* ICM_RouteMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICM_RouteMapViewController.m; sourceTree = "<group>"; };
 		CE8C1B33181E14BE00F3EA6E /* ICM_PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICM_PictureViewController.h; sourceTree = "<group>"; };
@@ -239,8 +241,9 @@
 				CE9BEFCA181C769700BF5343 /* GIS_Icon1-58.png */,
 				CE9F9867181B3A0B00C106E2 /* menuImage2.png */,
 				CE151C3E1810AB4E0084653D /* university-of-calgary.png */,
-				CE151C691810C9790084653D /* university.jpeg */,
+				CE1BF3BA1820F45900EC2364 /* university.jpeg */,
 				CE151C3C1810AAEF0084653D /* menuImage.jpg */,
+				CE1BF3BC1820F4F100EC2364 /* university2.jpg */,
 				CE151C091810990F0084653D /* RoomFinder-Info.plist */,
 				CE151C0A1810990F0084653D /* InfoPlist.strings */,
 				CE151C0D1810990F0084653D /* main.m */,
@@ -399,13 +402,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE151C3F1810AB4E0084653D /* university-of-calgary.png in Resources */,
-				CE151C6A1810C9790084653D /* university.jpeg in Resources */,
+				CE1BF3BB1820F45900EC2364 /* university.jpeg in Resources */,
 				CE9F9868181B3A0B00C106E2 /* menuImage2.png in Resources */,
 				CE151C3D1810AAF00084653D /* menuImage.jpg in Resources */,
 				CE151C1A1810990F0084653D /* Images.xcassets in Resources */,
 				CEA257DE1811EA650017371B /* panorama1.jpg in Resources */,
 				CE151C0C1810990F0084653D /* InfoPlist.strings in Resources */,
 				CE9BEFCB181C769700BF5343 /* GIS_Icon1-58.png in Resources */,
+				CE1BF3BD1820F4F100EC2364 /* university2.jpg in Resources */,
 				CE9BEFCF181C777D00BF5343 /* apple-touch-icon-120x120-precomposed.png in Resources */,
 				CE9BEFD1181C7F4B00BF5343 /* Splash screen 640x1136px.png in Resources */,
 				CE151C151810990F0084653D /* Main.storyboard in Resources */,
