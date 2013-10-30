@@ -8,9 +8,9 @@
 
 #import "ICM_Node.h"
 #import <GoogleMaps/GoogleMaps.h>
-
+#import <CoreLocation/CoreLocation.h>
 #import "ICM_Node.h"
-
+#import <MapKit/MapKit.h>
 
 @implementation ICM_Node
 
@@ -33,11 +33,20 @@
 
 
 // adds a neighbour to a node
-- (void)addNeighbour:(ICM_Node*)node Distance:(NSNumber*)distance;
+- (void)addNeighbour:(ICM_Node*)node
 {
+//    CLLocation *locB = [[CLLocation alloc] initWithLatitude:[[[sharedModel nodeList] objectAtIndex:x] nodeLocation].latitude longitude:[[[sharedModel nodeList] objectAtIndex:x] nodeLocation].longitude];
+//    
+//    
+//    CLLocationDistance currentDistance = [locA distanceFromLocation:locB];
+    //CLLocationDistance currentDistance = [locA distanceFromLocation:locB];
+    CLLocation *locA = [[CLLocation alloc] initWithLatitude:_nodeLocation.latitude longitude:_nodeLocation.longitude];
+    CLLocation *locB = [[CLLocation alloc] initWithLatitude:node.nodeLocation.latitude longitude:node.nodeLocation.longitude];
+    CLLocationDistance distance1 = [locA distanceFromLocation:locB];
+    NSNumber *distance2 = [NSNumber numberWithDouble:distance1];
     [_neighboursAndWeights addObject:[[NSMutableArray alloc] init]];
     [[_neighboursAndWeights objectAtIndex:([_neighboursAndWeights count]-1)] addObject:node];
-    [[_neighboursAndWeights objectAtIndex:([_neighboursAndWeights count]-1)] addObject:distance];
+    [[_neighboursAndWeights objectAtIndex:([_neighboursAndWeights count]-1)] addObject:distance2];
 }
 
 @end

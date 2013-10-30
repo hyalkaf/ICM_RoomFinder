@@ -24,7 +24,7 @@
 
 - (id)initWithValues:(BOOL)inside Ground:(BOOL)ground Lattitude:(float)lattitude Longitude:(float)longitude Photo:(UIImage*)photo Name:(NSString*)name;
 
-- (void)addNeighbour:(ICM_Node*)node Distance:(NSNumber*)distance;
+- (void)addNeighbour:(ICM_Node*)node;
 
 @end
 

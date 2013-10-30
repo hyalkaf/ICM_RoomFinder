@@ -32,20 +32,20 @@
         [_nodeList addObject:[[ICM_Node alloc] initWithValues:YES Ground:YES Lattitude:51.077772 Longitude:-114.127238 Photo:[UIImage imageNamed:@"4.jpg"] Name:@"Node 3"]];
         
         // neighbours for node 0
-        [[_nodeList objectAtIndex:0] addNeighbour:[_nodeList objectAtIndex:1] Distance:[NSNumber numberWithInt:1]];
-        [[_nodeList objectAtIndex:0] addNeighbour:[_nodeList objectAtIndex:2] Distance:[NSNumber numberWithInt:20]];
-        
+        [[_nodeList objectAtIndex:0] addNeighbour:[_nodeList objectAtIndex:1]];
+        [[_nodeList objectAtIndex:0] addNeighbour:[_nodeList objectAtIndex:2]];
+        	
         // neighbours for node 1
-        [[_nodeList objectAtIndex:1] addNeighbour:[_nodeList objectAtIndex:0] Distance:[NSNumber numberWithInt:1]];
-        [[_nodeList objectAtIndex:1] addNeighbour:[_nodeList objectAtIndex:3] Distance:[NSNumber numberWithInt:1]];
+        [[_nodeList objectAtIndex:1] addNeighbour:[_nodeList objectAtIndex:0]];
+        [[_nodeList objectAtIndex:1] addNeighbour:[_nodeList objectAtIndex:3]];
         
         // neighbours for node 2
-        [[_nodeList objectAtIndex:2] addNeighbour:[_nodeList objectAtIndex:0] Distance:[NSNumber numberWithInt:20]];
-        [[_nodeList objectAtIndex:2] addNeighbour:[_nodeList objectAtIndex:3] Distance:[NSNumber numberWithInt:1]];
+        [[_nodeList objectAtIndex:2] addNeighbour:[_nodeList objectAtIndex:0]];
+        [[_nodeList objectAtIndex:2] addNeighbour:[_nodeList objectAtIndex:3]];
         
         // neighbours for node 3
-        [[_nodeList objectAtIndex:3] addNeighbour:[_nodeList objectAtIndex:1] Distance:[NSNumber numberWithInt:1]];
-        [[_nodeList objectAtIndex:3] addNeighbour:[_nodeList objectAtIndex:2] Distance:[NSNumber numberWithInt:1]];
+        [[_nodeList objectAtIndex:3] addNeighbour:[_nodeList objectAtIndex:1]];
+        [[_nodeList objectAtIndex:3] addNeighbour:[_nodeList objectAtIndex:2]];
         
         _adjacancyMatrix = [[NSMutableArray alloc] initWithCapacity:[_nodeList count]];
         
